@@ -36,7 +36,7 @@ int main(){
     //empty array gives garbage value
     cout << n[4] << " " << n[3] << endl;
 
-    // traverse through array
+    // traverse through array : O(n)
     for(int i =0;i<5; i++){
         cout <<num[i] << endl;
     }
@@ -63,9 +63,5 @@ int main(){
     for(int i=0; i < m; i++){
         cout << inputarr[i] << " ";
     }
-
-
-
-
     return 0;
 }
