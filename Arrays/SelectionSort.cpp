@@ -2,6 +2,9 @@
 #include <climits>
 using namespace std;
 
+// Time Complexity : O(n²) [worst case, average case, best case]
+// Space Complexity: O(1)
+
 int main(){
     int n;
     cout << "enter a num of elements: ";

@@ -5,7 +5,7 @@ using namespace std;
 
 // Time Complexity : O(1) [when value at mid]
 // Time Complexity : O(log n) [when value at any other index]
-// Space Complexity: O(1)j
+// Space Complexity: O(1)
 
 int main(){
     int n, value;
