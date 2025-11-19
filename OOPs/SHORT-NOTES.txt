@@ -1,0 +1,96 @@
+#                                           - - - INHERITANCE - - -
+
+Inheritance allows one class (derived class) to acquire properties and behaviors of another class (base class).
+- Promotes code reusability
+- Supports polymorphism
+- Implements IS-A relationship
+
+❗Effect of visibility mode
+Base Member	    Public Inheritance	Protected Inheritance	Private Inheritance
+public	        public	            protected	            private
+protected	    protected	        protected	            private
+private	        ❌ Not inherited	  ❌ Not inherited	     ❌ Not inherited
+
+
+✅CONTRUCTOR DESTRUCTOR ORDER
+Order of execution:
+- Base constructor runs first
+- Then derived constructor
+- On destruction → reverse order
+ex: 
+    Base()
+    Derived()
+    ~Derived()
+    ~Base()
+
+
+✅ Diamond Problem
+Two copies of base class is copied - ambiguity
+solution ? virtual inheritance using 'virtual' keyword
+
+
+✅ OBJECT SLICING
+When a derived class object is assigned to a base class variable , Extra derived data is sliced off:
+Base b = Derived();
+
+
+✅ Important MCQ points:
+- Constructors are not inherited
+- Destructors are not inherited
+- Copy constructor not inherited
+- Assignment operator not inherited
+
+✅ FUNCTION OVERRIDING
+Same function name + same signature in base and derived class.
+- Achieved using virtual function for runtime polymorphism
+- Late binding occurs
+
+Rule:
+virtual void show();
+void show() override;
+
+
+✅ COMPOSITION vs INHERITANCE
+
+Inheritance = IS-A
+Composition = HAS-A (preferred)
+Important interview question:
+Use inheritance when behavior is shared, not just data.
+
+
+✅ Friendship is not inherited.
+
+✅ STATIC MEMBER IN INHERITANCE
+- Inherited
+- Shared across all objects
+- Accessed via derived class too
+
+✅ BASE INHERITED USING PROTECTED
+If derived class inherits base using protected mode:
+Public → becomes protected
+Protected → stays protected
+
+✅ CONSTRUCTOR IN MULTIPLE INHERITANCE
+
+Order follows class order in declaration, not initialization list.
+class D : public B, public C {};
+Order:
+B()
+C()
+D()
+
+✅ FINAL KEYWORD
+Stops inheritance or overriding.
+class A final { };
+virtual void show() final;
+
+
+🔥 Common MCQ Traps
+Private members are not inherited
+Constructor order is always base → derived
+Virtual function call through base pointer uses vtable
+Without virtual destructor, deleting derived via base pointer is undefined behavior
+Virtual inheritance solves diamond problem
+Overloading ≠ Overriding
+Static function cannot be virtual
+Abstract class cannot have objects

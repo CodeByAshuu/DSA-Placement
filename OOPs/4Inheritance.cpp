@@ -77,3 +77,11 @@ int main(){
     Car BMW;
     return 0;
 }
+
+/*
+5. HYBRID INHERITANCE
+
+Combination of other Inheritance
+
+
+*/
