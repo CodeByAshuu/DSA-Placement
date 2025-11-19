@@ -12,10 +12,23 @@ ex:
 int prime = {2,3,5,7,11};
 char name = char[26];
 
+# PASSING ARRAY TO A FUNCTION
+Arrays are passed to functions using pointers, as the array name decays to a pointer to the first element. 
+So, we also need to pass the size of the array to the function.
+
 */
 
 #include <iostream>
 using namespace std;
+
+
+// PASSING ARRAY TO FUNCTION
+void printArray(int arr[], int n){
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
 
 int main(){
     int num[5] = {1,2,3,4,5};
@@ -63,5 +76,10 @@ int main(){
     for(int i=0; i < m; i++){
         cout << inputarr[i] << " ";
     }
+
+    int arr1[] = {1,2,3,4,5,6};
+    int size = sizeof(arr1)/ sizeof(arr1[0]);
+    printArray(arr1, size);
     return 0;
 }
+

@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "charconv": "cpp",
         "xmemory": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
