@@ -5,7 +5,7 @@ using namespace std;
 // TIME COMPLEXITY : total calls x Work Done in each call
 //                  = logn x n
 //                  = O(nlogn)
-// SPACE COMPLEXITY : O(n)
+// SPACE COMPLEXITY : O(n) 
 
 void merge(vector<int> &arr, int st, int mid, int end){
     vector<int> temp;

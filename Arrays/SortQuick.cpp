@@ -2,6 +2,10 @@
 #include <vector>
 using namespace std;
 
+// TIME COMPLEXITY : O(nlogn) [average, practical]
+//                 : O(n²) [worst case] (when pivot repeatidely is either smallest/largest element)
+// SPACE COMPLEXITY : O(1)
+
 int partition(vector<int> &arr, int st, int end){
     int idx = st-1;             //idx is -1 
     int pivot = arr[end];       //pivot is last element
