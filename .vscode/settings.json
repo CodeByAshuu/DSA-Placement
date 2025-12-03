@@ -3,7 +3,8 @@
         "*.embeddedhtml": "html",
         "iostream": "cpp",
         "charconv": "cpp",
-        "xmemory": "cpp"
+        "xmemory": "cpp",
+        "ostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
