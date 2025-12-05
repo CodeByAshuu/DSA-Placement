@@ -87,7 +87,7 @@ int main(){
     cout << "After insert: " << str << endl;
 
     // Erasing part of the string erase(index, number of character to erase)
-    str.erase(5, 4); 
+    str.erase(5, 4);
     cout << "After erase: " << str << endl;
 
     
