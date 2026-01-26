@@ -12,6 +12,30 @@ ex:
 int prime = {2,3,5,7,11};
 char name = char[26];
 
+
+// with size , garbage value
+int arr[5];
+
+// with size and values
+int array[5] = {1,2,3,4,5}
+
+//with size, partial size
+int array[5] = {1,2};
+
+//compiler counts the size
+int array[] ={1,2,3,4,5};
+
+// with size, initializing with 0
+int array[5] = {0}
+
+// character array
+int character[] = "Ashu"
+
+// input based initialization
+int n;
+cin >> n;
+int arr[n];
+
 # PASSING ARRAY TO A FUNCTION
 Arrays are passed to functions using pointers, as the array name decays to a pointer to the first element. 
 So, we also need to pass the size of the array to the function.
@@ -34,6 +58,9 @@ int main(){
     int num[5] = {1,2,3,4,5};
     int n[5];
     char charac[5];
+
+    //garbage value
+    int array[5];   
 
     // initialize all elements to zero (only works for zero)
     int zero[5] = {0};
