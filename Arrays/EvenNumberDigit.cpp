@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity : O(n*length of digits);
+
+
 int digit(int n){
     int digitCount = 0;
     while(n > 0){
@@ -9,14 +12,6 @@ int digit(int n){
     }
     return digitCount;
 }
-
-
-// while(n<0){
-    // n/=10; //92/10 = 9
-    // count++; //--> 1
-    // 9/10 => 0;
-    // count++ => 2
-// }
 
 int main(){
     int arr[] = {92, 31, 8 , 789, 2345, 45678, 0, 123};
