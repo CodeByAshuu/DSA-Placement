@@ -3,6 +3,13 @@
 #include <algorithm>
 using namespace std;
 
+// Anagram : a word or phrase that is made by arranging the letters of another word or phrase in a 
+// different order 
+// Heart -> Earth
+// Note -> Tone
+// Arc -> Car
+// Gum -> Mug
+
 int main(){
     string str = "listen";
     string strr = "silent";
