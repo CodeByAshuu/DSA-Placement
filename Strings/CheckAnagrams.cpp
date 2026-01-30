@@ -28,6 +28,7 @@ int main(){
         return 0;
     }
     
+    // O(nlogn)
     sort(str.begin(), str.end());
     sort(strr.begin(), strr.end());
 
