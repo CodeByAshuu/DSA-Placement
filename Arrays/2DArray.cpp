@@ -3,12 +3,17 @@
 SYNTAX:
 data_type arrayName[num_rows][num_cols];
 ex: int arr[n][m];
+int arr[row][col];
+int arr[length][height];
 
-int matrix[3][4] = {
+
+int matrix[3][3] = {
     {1, 2, 3},
     {4, 5, 6},
     {9, 8, 9}
 };
+
+// here 1 ,2 ,3 is row & 1,4,9 is col.
 
 // accesing the element
 int value = matrix[0][2]; // value will be 3
