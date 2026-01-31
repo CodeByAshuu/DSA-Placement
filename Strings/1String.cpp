@@ -127,11 +127,12 @@ int main(){
 
 
     string str3 = "Hey Stuti!";
-    // to resize string upto given number of characters 
+    // to resize string upto given number of characters: 
+    // resize(Number of characters the %string should contain)
     str3.resize(5);
     cout << "After resize(): " << str3 << endl;
 
-    // replace (pos, n, string)
+    // replace (index, Number of characters to be replaced., string)
     str3.replace(5,0,"tuti");
     cout << "After replace(): " << str3 << endl;
 
