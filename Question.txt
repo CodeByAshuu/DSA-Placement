@@ -1,4 +1,18 @@
 
-# recursion
+# Recursion
 39 Combination Sum
 40 Combination Sum II
+216 Combination Sum III
+377 Combination Sum IV
+78 Subset
+123 Letter combination of string 
+46 Permutation
+131 Palindrome Partitioning
+
+#dfs
+200 Number of Islands
+79 Wordsearch
+
+
+# bfs
+994 Rotting orranges
