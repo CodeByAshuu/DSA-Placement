@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity: O(n²)
+// Space Complexity: O(1)
+
 int main(){
     int n;
     cout <<"enter number of elements: ";
